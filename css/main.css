@@ -92,6 +92,12 @@ body {
   }
 }
 
+@media (max-width: 767.98px) {
+  .section {
+    display: none;
+  }
+}
+
 .section__title {
   text-align: center;
   margin-left: auto;
@@ -929,9 +935,9 @@ footer {
 }
 
 .icon__qualitis {
+  max-width: 270px;
   padding: 25px 102px;
   background-color: #F5F4FA;
-  max-width: 270px;
   margin-bottom: 30px;
   border-radius: 4px;
 }
@@ -957,16 +963,14 @@ footer {
   margin-right: 0 px;
 }
 
+.feature {
+  padding-top: 60px;
+}
+
 @media (min-width: 768px) {
   .feature {
     display: flex;
     justify-content: center;
-  }
-}
-
-@media (min-width: 480px) {
-  .feature {
-    text-align: center;
   }
 }
 

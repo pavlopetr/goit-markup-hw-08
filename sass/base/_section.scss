@@ -5,6 +5,11 @@
     padding-bottom: 94px;
     padding-top: 94px;
     }
+    @include mq(mob-only){
+        display: none;
+    }
+    @include mq(tab-only){
+        display: none;
 }
 .section__title {
     text-align: center;

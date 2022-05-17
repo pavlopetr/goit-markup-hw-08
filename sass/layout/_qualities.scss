@@ -1,15 +1,15 @@
-.qualities{
+// .qualities{
     
-}
+// }
 .icon__qualitis{
+    max-width: 270px;
     padding: 25px 102px;
     background-color: #F5F4FA;
-    max-width: 270px;
     margin-bottom: 30px;
     border-radius: 4px;
-    @include mq(mob){
-       
-    }
+    // @include mq(mob){
+    //     max-width: 450px;
+    // }
 }
 
 .title {
@@ -19,6 +19,10 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    @include mq(mob){
+        padding-left: 15px;
+        padding-right: 15px;
+    }
    
 }
 
@@ -37,11 +41,12 @@
 
 
 .feature {
-  
+     padding-top: 60px;
   @include mq(tab){
     display: flex;
     justify-content: center;
   
+}
 }
 .feature .title {
     color: var(--primary-text-color);
