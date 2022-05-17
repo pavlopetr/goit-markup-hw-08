@@ -54,9 +54,7 @@ background-color: #ffffff;
 .comand-bloc{
     border:1px solid #AFB1B8;
     box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 30%);
-    &:not(:last-child){
-        margin-right: 30px;
-    }
+    
 }
 
 .comand{
