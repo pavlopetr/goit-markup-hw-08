@@ -1,0 +1,32 @@
+
+.images{
+display: flex;
+justify-content: flex-start;
+padding: 0;
+flex-wrap: wrap;
+margin-top: -30px;
+margin-left: -30px;
+}
+
+
+
+.img__work{
+position: relative;
+flex-basis: calc(100% / 3 - 30px);
+margin-top: 30px;
+margin-left: 30px;
+}
+
+.img__text{
+ position: absolute;
+ background-color: rgba(47, 48, 58, 0.8);
+ color: var(--hero-title-color);
+ width: 100%;
+ text-align: center;
+ padding-top: 27px;
+ padding-bottom: 27px;
+ bottom: 0;
+ left: 0;
+
+ 
+}

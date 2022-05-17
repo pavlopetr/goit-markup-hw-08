@@ -1,0 +1,25 @@
+.link{
+    margin-bottom: 9px;
+    display: block;
+    transition: color, var(--transition);
+}
+
+.linc.portfolio::after{
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: var(--accent-color);
+    width:78px ;
+    height: 4px;
+    margin-top: 28px; 
+}
+
+.linc.curent::after{
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: var(--accent-color);
+    width:48px ;
+    height: 4px;
+    margin-top: 28px;
+}

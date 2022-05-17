@@ -1,0 +1,13 @@
+
+.header__nav{
+   display: none;
+    @media screen and (min-width: 768px){
+        display: flex;
+    justify-content: space-between; 
+    }
+}
+
+.header__main-nav,
+.header__logo{
+    display: flex;
+}

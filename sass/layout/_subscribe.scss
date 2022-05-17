@@ -1,0 +1,36 @@
+.sub-container{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+   
+}
+.subscribe-icon{
+    text-align: center;
+   margin-left: 10px;
+   fill: var(--hero-title-color);
+    
+}
+
+.subscribe-form{
+ display: flex;
+ align-items: center;
+}
+.sub-text{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 14px;  
+    margin-bottom: 20px; 
+}
+.subscribe-input{
+    padding-left: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    width: 358px;
+    margin-right: 12px;
+    background-color: var(--background-hero-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: var(--hero-title-color);
+}

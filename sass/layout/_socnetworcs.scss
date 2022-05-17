@@ -1,0 +1,75 @@
+.soc-list{
+    display: flex;
+    justify-self: auto;
+    justify-content:center;
+    align-items: center;
+    padding:0px;
+    padding:0px 0px 30px 0px;
+    margin-top: 16px;
+}
+   
+
+.soc-item:not(:last-child){
+    margin-right: 10px;
+}
+
+.soc-link{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-self: auto;
+    justify-content:center;
+    align-items: center;
+    border-radius: 50% 50%;
+    transition: background-color, var(--transition);
+    &:hover,
+    &:focus{
+    background-color: #2196F3;
+}
+}
+.icons{
+    fill: #AFB1B8;
+    transition: fill, var(--transition);
+    &:hover{
+        fill: var(--hero-title-color);
+    }
+.soc-link:hover &,
+.soc-link:focus &{
+    fill: var(--hero-title-color);
+}
+}
+
+
+
+.section-team{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: #F5F4FA;
+    margin: 0 auto;
+}
+.comand-cards{
+padding-top: 30px;
+background-color: #ffffff;
+}
+.comand-bloc{
+    border:1px solid #AFB1B8;
+    box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 30%);
+    &:not(:last-child){
+        margin-right: 30px;
+    }
+}
+
+.comand{
+
+    @include mq (desk){
+        display: flex;
+        justify-content: flex-start;
+        padding: 0;
+    }
+}
+
+.comand-name,
+.profession{
+    text-align: center;
+    
+}

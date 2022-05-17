@@ -1,0 +1,38 @@
+.group-list{
+    display: flex;
+    justify-self: auto;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0px;
+}
+
+.group-link{
+    width: 170px;
+    height: 92px;
+    display: flex;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    fill: #AFB1B8;
+    transition: fill, var(--transition);
+
+&:hover,
+&:focus{
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
+}
+}
+.group{
+    width: 106px;
+    height: 60px;
+}
+
+.group-item:not(:last-child){
+    margin-right:30px;
+}
+
+.group-section{
+    padding-top: 95px;
+    padding-bottom: 94px;
+}
