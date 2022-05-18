@@ -14,28 +14,83 @@
 <body>
  
    <header class="header">
-    <div class="container">
+    <div class="container header__container">
 <div class="header__nav">
     <nav class="header__main-nav">
-        <div class="header__logo">
+        
             <a class="logo" href="./index.html"><span class="web">Web</span>Studio</a>
-        </div>   
+        
     
             <ul class="site__nav">
-                <li class="site__nav-linc"><a href="./index.html" class="linc curent">Студия</a></li>
-                <li class="site__nav-linc"><a href="./portfolio.html" class="linc">Портфолио</a></li>
-                <li class="site__nav-linc"><a href="" class="linc">Контакты</a></li>
+                <li class="site__nav-item"><a href="./index.html" class="linc curent  site__nav-linc">Студия</a></li>
+                <li class="site__nav-item"><a href="./portfolio.html" class="linc site__nav-linc">Портфолио</a></li>
+                <li class="site__nav-item"><a href="" class="linc site__nav-linc">Контакты</a></li>
             </ul>
         
      </nav>
             <ul class="contact">
                  <li class="contact__item"> <a class="contact__link" href="emailto:info@devstudio.com"><svg class="contact__icon" width="16" height="12"><use href="./images/symbol-defs.svg#icon-envelope"> </use></svg>info@devstudio.com </a></li>
-                 <li> <a class="contact__link" href="tel:+380961111111"><svg class="contact__icon" width="16" height="12"><use href="./images/symbol-defs.svg#icon-phone"> </use></svg> +38 096 111 11 11</a></li>
+                 <li class="contact__item"> <a class="contact__link" href="tel:+380961111111"><svg class="contact__icon" width="16" height="12"><use href="./images/symbol-defs.svg#icon-phone"> </use></svg> +38 096 111 11 11</a></li>
                  
             </ul>
         
 </div>
-</div>
+
+        <button  
+            class="menu-btn"
+            type="button"
+            aria-label="кнопка отрытия меню"
+            aria-expanded="false"
+            data-menu-button
+          >
+            <svg width="40" height="40">
+              <use
+                class="icon-open"
+                href="./images/symbol-defs.svg#icon-menu-mob"
+              ></use>
+              <use
+                class="icon-close"
+                href="./images/symbol-defs.svg#icon-close"
+              ></use>
+            </svg>
+          </button>
+          <div class="mobile-menu" data-menu>
+            
+            <ul class="mobile-menu-nav">
+              <li class="mobile-menu-item">
+                <a href="./index.html" class="mobile-menu-link">Студия </a>
+              </li>
+              <li class="mobile-menu-item">
+                <a href="./portfolio.html" class="mobile-menu-link">Портфолио</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a href="" class="mobile-menu-link">Контакты</a>
+              </li>
+            </ul>
+            <ul class="mobile-menu-contacts">
+              <li class="mobile-menu-item">
+                <a href="" class="mobile-menu-link">+38 096 111 11 11</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a href="" class="mobile-menu-link">info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="mobile-menu-socials">
+              <li class="mobile-menu-social">
+                <a href="" class="mobile-menu-link">Instagram </a>
+              </li>
+              <li class="mobile-menu-social">
+                <a href="" class="mobile-menu-link">Twitter</a>
+              </li>
+              <li class="mobile-menu-social">
+                <a href="" class="mobile-menu-link">Facebook</a>
+              </li>
+              <li class="mobile-menu-social">
+                <a href="" class="mobile-menu-link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+      </div>
     </header>
  
 
@@ -189,7 +244,7 @@
    
     </main>
      
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container-futer container">
            <div class="ftr-cont">
             <div class="footer-content">
@@ -232,7 +287,7 @@
                 </form>
               </div>
         </div>
-    </footer> -->
+    </footer>
     
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
@@ -306,6 +361,7 @@
      </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu-single-btn.js"></script>
 </body>
 
 </html>

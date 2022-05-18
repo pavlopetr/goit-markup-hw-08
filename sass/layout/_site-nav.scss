@@ -1,10 +1,16 @@
-.site__nav .linc {
+.site__nav-linc {
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     transition: color, var(--transition);
+    padding-bottom: 32px;
+    padding-top: 32px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
    &:hover,
    &:focus{
     color: var(--accent-color);
@@ -13,13 +19,16 @@
 .site__nav{
     display: flex;
     padding: 0;
+    @include mq(mob-only){
+        display: none;
+    }
 }
-.site__nav-linc{
-    margin-right: 50px;
-    padding-bottom: 32px;
-    padding-top: 32px;
-    position: relative;
-
+.site__nav-item{
+    @include mq(tab){
+        &:not(:last-child){
+            margin-right: 50px;
+        }
+    }
 }
 
 

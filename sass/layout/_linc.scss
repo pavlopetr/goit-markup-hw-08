@@ -12,6 +12,7 @@
     width:78px ;
     height: 4px;
     margin-top: 28px; 
+    bottom: 0;
 }
 
 .linc.curent::after{
@@ -21,5 +22,6 @@
     background-color: var(--accent-color);
     width:48px ;
     height: 4px;
-    margin-top: 28px;
+    bottom: 0;
+    left: 0;
 }

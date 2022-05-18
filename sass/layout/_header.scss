@@ -1,13 +1,31 @@
-
+.header{
+    @include mq(mob-only){
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .logo{
+        @include mq(tab){
+        margin-right: 88px;
+        }
+    }
+}
+.header__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .header__nav{
-   display: none;
-    @media screen and (min-width: 768px){
+   
+   @include mq(tab){
+       width: 100%;
         display: flex;
-    justify-content: space-between; 
+        align-items: center;
+    // justify-content: space-between; 
     }
 }
 
-.header__main-nav,
-.header__logo{
+.header__main-nav{
     display: flex;
+    align-items: center;
+
 }
