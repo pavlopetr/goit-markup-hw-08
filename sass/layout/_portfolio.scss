@@ -32,6 +32,7 @@ transform: translateY(0);
 .card-text{
     padding: 20px 24px;
     border: 1px solid #ECECEC;
+    flex-grow: 1;
 }
 .title-portfolio {
     margin-bottom: 4px;
@@ -40,6 +41,7 @@ transform: translateY(0);
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    flex-grow: 1;
 }
 
 .portfolio-link{
@@ -64,24 +66,52 @@ transition: box-shadow var(--transition);
     padding-top: 100px;
     padding-bottom: 94px;
 }
+
 .ftr-content{
-    flex-basis: calc((100% - 90px) / 3);
+    // flex-basis: calc((100% - 90px) / 3);
     margin-left: 30px;
     margin-bottom: 30px;
+    @include mq(mob-only){
+        flex-basis: calc((100% - 90px) / 1)
+    }
+   @include mq(tab){
+    flex-basis: calc((100% - 90px) / 2)
+   }
+   @include mq(desk){
+    flex-basis: calc((100% - 90px) / 3);
+   }
 }
+
 .filters-content{
     display: flex;
     flex-wrap: wrap;
     padding-left: 0; 
     margin-right: -30px; 
     margin-right: -30px;
+    flex-grow: 1;
  }
  .filters{
     display: flex;
-    justify-content: center;
+    
     margin-bottom: 56px;
+    @include mq(mob-only){
+        flex-wrap: wrap;
+       
+    }
+    @include mq(tab){
+        justify-content: center;
+    }
+    @include mq(desk){
+        justify-content: center; 
+    }
     
 }  
+
 .filters >li:not(:last-child){
-    margin-right: 6px;
+    margin-right: 8px;
+}
+.filters-items{
+   @include mq(mob-only){
+    margin-bottom: 15px;
+   }
 }

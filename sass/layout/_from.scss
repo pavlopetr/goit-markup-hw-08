@@ -52,7 +52,14 @@
   margin-bottom: 5px;
 }
 .check-text{
-    font-size: 14px;
+  font-size: 12px;
+  line-height: 1.17;
+  // width: 100%;
+  letter-spacing: 0.03em;
+    @include mq(desk){
+      font-size: 14px;
+      line-height: 1.7;
+    }
 }
 
 .form-textarea {
@@ -71,11 +78,8 @@
 .form-checkbox{
   width:16px;
   height: 15px;
-  border: 1px solid var(--title-text-color);
+  border: 2px solid var(--title-text-color);
   margin-right: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 4px;
 
 .form-check-input:hover + &,

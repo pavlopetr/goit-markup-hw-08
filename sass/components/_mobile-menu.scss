@@ -34,9 +34,14 @@
   
   .icon-close {
     opacity: 0;
+    &:hover,
+    &:focus{
+      fill: var(--accent-color);
+    }
   }
   .menu-btn.is-open .icon-close {
     opacity: 1;
+
   }
   
   .mobile-menu {
@@ -66,23 +71,10 @@
     transform: translateX(0);
   }
   
-  .mobile-menu-close-btn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    padding: 0;
-  
-    background-color: transparent;
-    border: none;
-  
-    cursor: pointer;
-  }
+  .mobile-menu-link {
+    color: currentColor;
+ 
+}
   
   .mobile-menu-nav {
     margin-bottom: auto;
@@ -101,11 +93,13 @@
       }
     }
   
-    .mobile-menu-link {
-      color: currentColor;
-    }
+
+          .curent {
+            color: var(--accent-color)
+          }
   }
-  
+
+
   .mobile-menu-contacts {
     margin-bottom: 64px;
   
@@ -124,7 +118,7 @@
   
       &:first-child {
         .mobile-menu-link {
-          color: #2196f3;
+          color: var(--accent-color);
   
           @media screen and (min-width: 480px) {
             font-size: 34px;
@@ -133,9 +127,7 @@
       }
     }
   
-    .mobile-menu-link {
-      color: currentColor;
-    }
+    
   }
   
   .mobile-menu-socials {
@@ -151,9 +143,7 @@
   
     color: #2196f3;
   
-    .mobile-menu-link {
-      color: currentColor;
-    }
+   
   
     .mobile-menu-social {
       &:not(:last-child) {

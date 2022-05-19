@@ -27,8 +27,8 @@
             
         
                 <ul class="site__nav">
-                    <li class="site__nav-item"><a href="./index.html" class=" site__nav-linc">Студия</a></li>
-                    <li class="site__nav-item"><a href="./portfolio.html" class="linc portfolio linc site__nav-linc">Портфолио</a></li>
+                    <li class="site__nav-item"><a href="./index.html" class="linc site__nav-linc">Студия</a></li>
+                    <li class="site__nav-item"><a href="./portfolio.html" class="linc curent site__nav-linc">Портфолио</a></li>
                     <li class="site__nav-item"><a href="" class="linc site__nav-linc">Контакты</a></li>
                 </ul>
             
@@ -63,10 +63,10 @@
                 
                 <ul class="mobile-menu-nav">
                   <li class="mobile-menu-item">
-                    <a href="./index.html" class="mobile-menu-link">Студия </a>
+                    <a href="./index.html" class=" mobile-menu-link ">Студия </a>
                   </li>
                   <li class="mobile-menu-item">
-                    <a href="./portfolio.html" class="mobile-menu-link">Портфолио</a>
+                    <a href="./portfolio.html" class="mobile-menu-link curent">Портфолио</a>
                   </li>
                   <li class="mobile-menu-item">
                     <a href="" class="mobile-menu-link">Контакты</a>
@@ -104,19 +104,19 @@
             <div class="container">
                 <h1 class="visually__hidden">фильтры</h1>
                 <ul class="filters">
-                    <li>
+                    <li class="filters-items">
                         <button class="btn-portfolio" type="button">Все</button>
                     </li>
-                    <li>
+                    <li class="filters-items">
                         <button class="btn-portfolio" type="button">Веб-сайты</button>
                     </li>
-                    <li>
+                    <li class="filters-items">
                         <button class="btn-portfolio" type="button">Приложения</button>
                     </li>
-                    <li>
+                    <li class="filters-items">
                         <button class="btn-portfolio" type="button">Дизайн</button>
                     </li>
-                    <li>
+                    <li class="filters-items">
                         <button class="btn-portfolio" type="button">Маркетинг</button>
                     </li>
                 </ul>
@@ -127,8 +127,57 @@
                         <a class="portfolio-link" href="#">
 
                             <div class="portfolio-wraper">
-                                <img class="img-portfolio" src="./images/img(1).jpg" alt="ноутбук" width="370">
-                                <div class="portfolio-text">
+                                <picture>
+                                    <source
+                                      srcset="
+                                            ./images/adaptive/portfolio/desk/desk-pro1-1x.webp 1x
+                                            ./images/adaptive/portfolio/desk/desk-pro1-2x.webp 2x
+                                          "
+                                      media="(min-width:1200px)"
+                                      type="image/webp"
+                                    />
+                                    <source
+                                      srcset="
+                                        ./images/adaptive/portfolio/desk/desk-pro1-1x.jpg 1x,
+                                        ./images/adaptive/portfolio/desk/desk-pro1-2x.jpg 2x
+                                      "
+                                      media="(min-width:1200px)"
+                                      type="image/jpg"
+                                    />
+                                    <source
+                                      srcset="
+                                            ./images/adaptive/portfolio/tab/tab-pro1-1x.webp 1x
+                                            ./images/adaptive/portfolio/tab/tab-pro1-2x.webp 2x
+                                          "
+                                      media="(min-width:768px)"
+                                      type="image/webp"
+                                    />
+                                    <source
+                                      srcset="
+                                        ./images/adaptive/portfolio/tab/tab-pro1-1x.jpg 1x,
+                                        ./images/adaptive/portfolio/tab/tab-pro1-2x.jpg 2x
+                                      "
+                                      media="(min-width:768px)"
+                                      type="image/jpg"
+                                    />
+                                    <source
+                                      srcset="
+                                            ./images/adaptive/portfolio/mob/mob-pro1-1x.webp 1x
+                                            ./images/adaptive/portfolio/mob/mob-pro1-2x.webp 2x
+                                          "
+                                      media="(max-width:767px)"
+                                      type="image/webp"
+                                    />
+                                    <source
+                                      srcset="
+                                        ./images/adaptive/portfolio/mob/mob-pro1-1x.jpg 1x,
+                                        ./images/adaptive/portfolio/mob/mob-pro1-2x.jpg 2x
+                                      "
+                                      media="(max-width:767px)"
+                                      type="image/jpg"
+                                    />
+                                    <img src="./images/adaptive/portfolio/mob/mob-pro1-1x.jpg " alt="Игорь Демьяненко" />
+                                  </picture>                                <div class="portfolio-text">
                                     <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов.
                                         Все это позволит посетителю получить исчерпывающие сведения о компании или
@@ -146,8 +195,58 @@
                     <li class="ftr-content">
                         <a class="portfolio-link" href="#">
                             <div class="portfolio-wraper">
-                                <img class="img-portfolio" src="./images/img(2).jpg" alt="баскетболисти" width="370">
-                                <div class="portfolio-text">
+                                <picture>
+                                    <source
+                                      srcset="
+                                            ./images/adaptive/portfolio/desk/desk-pro2-1x.webp 1x
+                                            ./images/adaptive/portfolio/desk/desk-pro2-2x.webp 2x
+                                          "
+                                      media="(min-width:1200px)"
+                                      type="image/webp"
+                                    />
+                                    <source
+                                      srcset="
+                                        ./images/adaptive/portfolio/desk/desk-pro2-1x.jpg 1x,
+                                        ./images/adaptive/portfolio/desk/desk-pro2-2x.jpg 2x
+                                      "
+                                      media="(min-width:1200px)"
+                                      type="image/jpg"
+                                    />
+                                    <source
+                                      srcset="
+                                            ./images/adaptive/portfolio/tab/tab-pro2-1x.webp 1x
+                                            ./images/adaptive/portfolio/tab/tab-pro2-2x.webp 2x
+                                          "
+                                      media="(min-width:768px)"
+                                      type="image/webp"
+                                    />
+                                    <source
+                                      srcset="
+                                        ./images/adaptive/portfolio/tab/tab-pro2-1x.jpg 1x,
+                                        ./images/adaptive/portfolio/tab/tab-pro2-2x.jpg 2x
+                                      "
+                                      media="(min-width:768px)"
+                                      type="image/jpg"
+                                    />
+                                    <source
+                                      srcset="
+                                            ./images/adaptive/portfolio/mob/mob-pro2-1x.webp 1x
+                                            ./images/adaptive/portfolio/mob/mob-pro2-2x.webp 2x
+                                          "
+                                      media="(max-width:767px)"
+                                      type="image/webp"
+                                    />
+                                    <source
+                                      srcset="
+                                        ./images/adaptive/portfolio/mob/mob-pro2-1x.jpg 1x,
+                                        ./images/adaptive/portfolio/mob/mob-pro2-2x.jpg 2x
+                                      "
+                                      media="(max-width:767px)"
+                                      type="image/jpg"
+                                    />
+                                    <img src="./images/adaptive/portfolio/mob/mob-pro2-1x.jpg " alt="Игорь Демьяненко" />
+                                  </picture>                              
+                                    <div class="portfolio-text">
                                     <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов.
                                         Все это позволит посетителю получить исчерпывающие сведения о компании или
@@ -164,8 +263,57 @@
                     <li class="ftr-content">
                         <a class="portfolio-link" href="#">
                             <div class="portfolio-wraper">
-                                <img class="img-portfolio" src="./images/img(3).jpg" alt="рыба" width="370">
-                                <div class="portfolio-text">
+                                <picture>
+                                    <source
+                                      srcset="
+                                            ./images/adaptive/portfolio/desk/desk-pro3-1x.webp 1x
+                                            ./images/adaptive/portfolio/desk/desk-pro3-2x.webp 2x
+                                          "
+                                      media="(min-width:1200px)"
+                                      type="image/webp"
+                                    />
+                                    <source
+                                      srcset="
+                                        ./images/adaptive/portfolio/desk/desk-pro3-1x.jpg 1x,
+                                        ./images/adaptive/portfolio/desk/desk-pro3-2x.jpg 2x
+                                      "
+                                      media="(min-width:1200px)"
+                                      type="image/jpg"
+                                    />
+                                    <source
+                                      srcset="
+                                            ./images/adaptive/portfolio/tab/tab-pro3-1x.webp 1x
+                                            ./images/adaptive/portfolio/tab/tab-pro3-2x.webp 2x
+                                          "
+                                      media="(min-width:768px)"
+                                      type="image/webp"
+                                    />
+                                    <source
+                                      srcset="
+                                        ./images/adaptive/portfolio/tab/tab-pro3-1x.jpg 1x,
+                                        ./images/adaptive/portfolio/tab/tab-pro3-2x.jpg 2x
+                                      "
+                                      media="(min-width:768px)"
+                                      type="image/jpg"
+                                    />
+                                    <source
+                                      srcset="
+                                            ./images/adaptive/portfolio/mob/mob-pro3-1x.webp 1x
+                                            ./images/adaptive/portfolio/mob/mob-pro3-2x.webp 2x
+                                          "
+                                      media="(max-width:767px)"
+                                      type="image/webp"
+                                    />
+                                    <source
+                                      srcset="
+                                        ./images/adaptive/portfolio/mob/mob-pro3-1x.jpg 1x,
+                                        ./images/adaptive/portfolio/mob/mob-pro3-2x.jpg 2x
+                                      "
+                                      media="(max-width:767px)"
+                                      type="image/jpg"
+                                    />
+                                    <img src="./images/adaptive/portfolio/mob/mob-pro3-1x.jpg " alt="Игорь Демьяненко" />
+                                  </picture>                                <div class="portfolio-text">
                                     <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов.
                                         Все это позволит посетителю получить исчерпывающие сведения о компании или
@@ -182,8 +330,57 @@
                     <li class="ftr-content">
                         <a class="portfolio-link" href="#">
                             <div class="portfolio-wraper">
-                                <img class="img-portfolio" src="./images/img(4).jpg" alt="наушники" width="370">
-                                <div class="portfolio-text">
+                                <picture>
+                                    <source
+                                      srcset="
+                                            ./images/adaptive/portfolio/desk/desk-pro4-1x.webp 1x
+                                            ./images/adaptive/portfolio/desk/desk-pro4-2x.webp 2x
+                                          "
+                                      media="(min-width:1200px)"
+                                      type="image/webp"
+                                    />
+                                    <source
+                                      srcset="
+                                        ./images/adaptive/portfolio/desk/desk-pro4-1x.jpg 1x,
+                                        ./images/adaptive/portfolio/desk/desk-pro4-2x.jpg 2x
+                                      "
+                                      media="(min-width:1200px)"
+                                      type="image/jpg"
+                                    />
+                                    <source
+                                      srcset="
+                                            ./images/adaptive/portfolio/tab/tab-pro4-1x.webp 1x
+                                            ./images/adaptive/portfolio/tab/tab-pro4-2x.webp 2x
+                                          "
+                                      media="(min-width:768px)"
+                                      type="image/webp"
+                                    />
+                                    <source
+                                      srcset="
+                                        ./images/adaptive/portfolio/tab/tab-pro4-1x.jpg 1x,
+                                        ./images/adaptive/portfolio/tab/tab-pro4-2x.jpg 2x
+                                      "
+                                      media="(min-width:768px)"
+                                      type="image/jpg"
+                                    />
+                                    <source
+                                      srcset="
+                                            ./images/adaptive/portfolio/mob/mob-pro4-1x.webp 1x
+                                            ./images/adaptive/portfolio/mob/mob-pro4-2x.webp 2x
+                                          "
+                                      media="(max-width:767px)"
+                                      type="image/webp"
+                                    />
+                                    <source
+                                      srcset="
+                                        ./images/adaptive/portfolio/mob/mob-pro4-1x.jpg 1x,
+                                        ./images/adaptive/portfolio/mob/mob-pro4-2x.jpg 2x
+                                      "
+                                      media="(max-width:767px)"
+                                      type="image/jpg"
+                                    />
+                                    <img src="./images/adaptive/portfolio/mob/mob-pro4-1x.jpg " alt="Игорь Демьяненко" />
+                                  </picture>                                <div class="portfolio-text">
                                     <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов.
                                         Все это позволит посетителю получить исчерпывающие сведения о компании или
@@ -200,8 +397,57 @@
                     <li class="ftr-content">
                         <a class="portfolio-link" href="#">
                             <div class="portfolio-wraper">
-                                <img class="img-portfolio" src="./images/img(5).jpg" alt="коробки" width="370">
-                                <div class="portfolio-text">
+                                <picture>
+                                    <source
+                                      srcset="
+                                            ./images/adaptive/portfolio/desk/desk-pro5-1x.webp 1x
+                                            ./images/adaptive/portfolio/desk/desk-pro5-2x.webp 2x
+                                          "
+                                      media="(min-width:1200px)"
+                                      type="image/webp"
+                                    />
+                                    <source
+                                      srcset="
+                                        ./images/adaptive/portfolio/desk/desk-pro5-1x.jpg 1x,
+                                        ./images/adaptive/portfolio/desk/desk-pro5-2x.jpg 2x
+                                      "
+                                      media="(min-width:1200px)"
+                                      type="image/jpg"
+                                    />
+                                    <source
+                                      srcset="
+                                            ./images/adaptive/portfolio/tab/tab-pro5-1x.webp 1x
+                                            ./images/adaptive/portfolio/tab/tab-pro5-2x.webp 2x
+                                          "
+                                      media="(min-width:768px)"
+                                      type="image/webp"
+                                    />
+                                    <source
+                                      srcset="
+                                        ./images/adaptive/portfolio/tab/tab-pro5-1x.jpg 1x,
+                                        ./images/adaptive/portfolio/tab/tab-pro5-2x.jpg 2x
+                                      "
+                                      media="(min-width:768px)"
+                                      type="image/jpg"
+                                    />
+                                    <source
+                                      srcset="
+                                            ./images/adaptive/portfolio/mob/mob-pro5-1x.webp 1x
+                                            ./images/adaptive/portfolio/mob/mob-pro5-2x.webp 2x
+                                          "
+                                      media="(max-width:767px)"
+                                      type="image/webp"
+                                    />
+                                    <source
+                                      srcset="
+                                        ./images/adaptive/portfolio/mob/mob-pro5-1x.jpg 1x,
+                                        ./images/adaptive/portfolio/mob/mob-pro5-2x.jpg 2x
+                                      "
+                                      media="(max-width:767px)"
+                                      type="image/jpg"
+                                    />
+                                    <img src="./images/adaptive/portfolio/mob/mob-pro5-1x.jpg " alt="Игорь Демьяненко" />
+                                  </picture>                                <div class="portfolio-text">
                                     <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов.
                                         Все это позволит посетителю получить исчерпывающие сведения о компании или
@@ -218,8 +464,57 @@
                     <li class="ftr-content">
                         <a class="portfolio-link" href="#">
                             <div class="portfolio-wraper">
-                                <img class="img-portfolio" src="./images/img(6).jpg" alt="монитор" width="370">
-                                <div class="portfolio-text">
+                                <picture>
+                                    <source
+                                      srcset="
+                                            ./images/adaptive/portfolio/desk/desk-pro6-1x.webp 1x
+                                            ./images/adaptive/portfolio/desk/desk-pro6-2x.webp 2x
+                                          "
+                                      media="(min-width:1200px)"
+                                      type="image/webp"
+                                    />
+                                    <source
+                                      srcset="
+                                        ./images/adaptive/portfolio/desk/desk-pro6-1x.jpg 1x,
+                                        ./images/adaptive/portfolio/desk/desk-pro6-2x.jpg 2x
+                                      "
+                                      media="(min-width:1200px)"
+                                      type="image/jpg"
+                                    />
+                                    <source
+                                      srcset="
+                                            ./images/adaptive/portfolio/tab/tab-pro6-1x.webp 1x
+                                            ./images/adaptive/portfolio/tab/tab-pro6-2x.webp 2x
+                                          "
+                                      media="(min-width:768px)"
+                                      type="image/webp"
+                                    />
+                                    <source
+                                      srcset="
+                                        ./images/adaptive/portfolio/tab/tab-pro6-1x.jpg 1x,
+                                        ./images/adaptive/portfolio/tab/tab-pro6-2x.jpg 2x
+                                      "
+                                      media="(min-width:768px)"
+                                      type="image/jpg"
+                                    />
+                                    <source
+                                      srcset="
+                                            ./images/adaptive/portfolio/mob/mob-pro6-1x.webp 1x
+                                            ./images/adaptive/portfolio/mob/mob-pro6-2x.webp 2x
+                                          "
+                                      media="(max-width:767px)"
+                                      type="image/webp"
+                                    />
+                                    <source
+                                      srcset="
+                                        ./images/adaptive/portfolio/mob/mob-pro6-1x.jpg 1x,
+                                        ./images/adaptive/portfolio/mob/mob-pro6-2x.jpg 2x
+                                      "
+                                      media="(max-width:767px)"
+                                      type="image/jpg"
+                                    />
+                                    <img src="./images/adaptive/portfolio/mob/mob-pro6-1x.jpg " alt="Игорь Демьяненко" />
+                                  </picture>                                <div class="portfolio-text">
                                     <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов.
                                         Все это позволит посетителю получить исчерпывающие сведения о компании или
@@ -236,8 +531,57 @@
                     <li class="ftr-content">
                         <a class="portfolio-link" href="#">
                             <div class="portfolio-wraper">
-                                <img class="img-portfolio" src="./images/img(7).jpg" alt="книга" width="370">
-                                <div class="portfolio-text">
+                                <picture>
+                                    <source
+                                      srcset="
+                                            ./images/adaptive/portfolio/desk/desk-pro7-1x.webp 1x
+                                            ./images/adaptive/portfolio/desk/desk-pro7-2x.webp 2x
+                                          "
+                                      media="(min-width:1200px)"
+                                      type="image/webp"
+                                    />
+                                    <source
+                                      srcset="
+                                        ./images/adaptive/portfolio/desk/desk-pro7-1x.jpg 1x,
+                                        ./images/adaptive/portfolio/desk/desk-pro7-2x.jpg 2x
+                                      "
+                                      media="(min-width:1200px)"
+                                      type="image/jpg"
+                                    />
+                                    <source
+                                      srcset="
+                                            ./images/adaptive/portfolio/tab/tab-pro7-1x.webp 1x
+                                            ./images/adaptive/portfolio/tab/tab-pro7-2x.webp 2x
+                                          "
+                                      media="(min-width:768px)"
+                                      type="image/webp"
+                                    />
+                                    <source
+                                      srcset="
+                                        ./images/adaptive/portfolio/tab/tab-pro7-1x.jpg 1x,
+                                        ./images/adaptive/portfolio/tab/tab-pro7-2x.jpg 2x
+                                      "
+                                      media="(min-width:768px)"
+                                      type="image/jpg"
+                                    />
+                                    <source
+                                      srcset="
+                                            ./images/adaptive/portfolio/mob/mob-pro7-1x.webp 1x
+                                            ./images/adaptive/portfolio/mob/mob-pro7-2x.webp 2x
+                                          "
+                                      media="(max-width:767px)"
+                                      type="image/webp"
+                                    />
+                                    <source
+                                      srcset="
+                                        ./images/adaptive/portfolio/mob/mob-pro7-1x.jpg 1x,
+                                        ./images/adaptive/portfolio/mob/mob-pro7-2x.jpg 2x
+                                      "
+                                      media="(max-width:767px)"
+                                      type="image/jpg"
+                                    />
+                                    <img src="./images/adaptive/portfolio/mob/mob-pro7-1x.jpg " alt="Игорь Демьяненко" />
+                                  </picture>                                <div class="portfolio-text">
                                     <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов.
                                         Все это позволит посетителю получить исчерпывающие сведения о компании или
@@ -254,8 +598,57 @@
                     <li class="ftr-content">
                         <a class="portfolio-link" href="#">
                             <div class="portfolio-wraper">
-                                <img class="img-portfolio" src="./images/img(8).jpg" alt="бирка" width="370">
-                                <div class="portfolio-text">
+                                <picture>
+                                    <source
+                                      srcset="
+                                            ./images/adaptive/portfolio/desk/desk-pro8-1x.webp 1x
+                                            ./images/adaptive/portfolio/desk/desk-pro8-2x.webp 2x
+                                          "
+                                      media="(min-width:1200px)"
+                                      type="image/webp"
+                                    />
+                                    <source
+                                      srcset="
+                                        ./images/adaptive/portfolio/desk/desk-pro8-1x.jpg 1x,
+                                        ./images/adaptive/portfolio/desk/desk-pro8-2x.jpg 2x
+                                      "
+                                      media="(min-width:1200px)"
+                                      type="image/jpg"
+                                    />
+                                    <source
+                                      srcset="
+                                            ./images/adaptive/portfolio/tab/tab-pro8-1x.webp 1x
+                                            ./images/adaptive/portfolio/tab/tab-pro8-2x.webp 2x
+                                          "
+                                      media="(min-width:768px)"
+                                      type="image/webp"
+                                    />
+                                    <source
+                                      srcset="
+                                        ./images/adaptive/portfolio/tab/tab-pro8-1x.jpg 1x,
+                                        ./images/adaptive/portfolio/tab/tab-pro8-2x.jpg 2x
+                                      "
+                                      media="(min-width:768px)"
+                                      type="image/jpg"
+                                    />
+                                    <source
+                                      srcset="
+                                            ./images/adaptive/portfolio/mob/mob-pro8-1x.webp 1x
+                                            ./images/adaptive/portfolio/mob/mob-pro8-2x.webp 2x
+                                          "
+                                      media="(max-width:767px)"
+                                      type="image/webp"
+                                    />
+                                    <source
+                                      srcset="
+                                        ./images/adaptive/portfolio/mob/mob-pro8-1x.jpg 1x,
+                                        ./images/adaptive/portfolio/mob/mob-pro8-2x.jpg 2x
+                                      "
+                                      media="(max-width:767px)"
+                                      type="image/jpg"
+                                    />
+                                    <img src="./images/adaptive/portfolio/mob/mob-pro8-1x.jpg " alt="Игорь Демьяненко" />
+                                  </picture>                                <div class="portfolio-text">
                                     <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов.
                                         Все это позволит посетителю получить исчерпывающие сведения о компании или
@@ -272,8 +665,57 @@
                     <li class="ftr-content">
                         <a class="portfolio-link" href="#">
                             <div class="portfolio-wraper">
-                                <img class="img-portfolio" src="./images/img(9).jpg" alt="ноутбук" width="370">
-                                <div class="portfolio-text">
+                                <picture>
+                                    <source
+                                      srcset="
+                                            ./images/adaptive/portfolio/desk/desk-pro9-1x.webp 1x
+                                            ./images/adaptive/portfolio/desk/desk-pro9-2x.webp 2x
+                                          "
+                                      media="(min-width:1200px)"
+                                      type="image/webp"
+                                    />
+                                    <source
+                                      srcset="
+                                        ./images/adaptive/portfolio/desk/desk-pro9-1x.jpg 1x,
+                                        ./images/adaptive/portfolio/desk/desk-pro9-2x.jpg 2x
+                                      "
+                                      media="(min-width:1200px)"
+                                      type="image/jpg"
+                                    />
+                                    <source
+                                      srcset="
+                                            ./images/adaptive/portfolio/tab/tab-pro9-1x.webp 1x
+                                            ./images/adaptive/portfolio/tab/tab-pro9-2x.webp 2x
+                                          "
+                                      media="(min-width:768px)"
+                                      type="image/webp"
+                                    />
+                                    <source
+                                      srcset="
+                                        ./images/adaptive/portfolio/tab/tab-pro9-1x.jpg 1x,
+                                        ./images/adaptive/portfolio/tab/tab-pro9-2x.jpg 2x
+                                      "
+                                      media="(min-width:768px)"
+                                      type="image/jpg"
+                                    />
+                                    <source
+                                      srcset="
+                                            ./images/adaptive/portfolio/mob/mob-pro9-1x.webp 1x
+                                            ./images/adaptive/portfolio/mob/mob-pro9-2x.webp 2x
+                                          "
+                                      media="(max-width:767px)"
+                                      type="image/webp"
+                                    />
+                                    <source
+                                      srcset="
+                                        ./images/adaptive/portfolio/mob/mob-pro9-1x.jpg 1x,
+                                        ./images/adaptive/portfolio/mob/mob-pro9-2x.jpg 2x
+                                      "
+                                      media="(max-width:767px)"
+                                      type="image/jpg"
+                                    />
+                                    <img src="./images/adaptive/portfolio/mob/mob-pro9-1x.jpg " alt="Игорь Демьяненко" />
+                                  </picture>                                <div class="portfolio-text">
                                     <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов.
                                         Все это позволит посетителю получить исчерпывающие сведения о компании или
