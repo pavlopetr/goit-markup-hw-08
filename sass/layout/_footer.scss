@@ -28,8 +28,12 @@ footer {
   // text-align: initial;
 }
 .footer-icons {
-  text-align: center;
+  
   margin-bottom: 60px;
+  @include mq(no-desk){
+    text-align: center;
+  }
+  
 }
 
 .ftr-cont {

@@ -1,4 +1,9 @@
-
+.qualities{
+   
+    @include mq(desk){
+        padding-bottom: 47px;
+    }
+}
 .icon__qualitis{
     background-color: #F5F4FA;
     margin-bottom: 30px;

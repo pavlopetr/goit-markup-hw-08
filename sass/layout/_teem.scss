@@ -1,38 +1,41 @@
-.comand-teem{
-    display: block;
+.comand-teem {
+  display: block;
 }
 .comand-name {
-    margin-bottom: 10px;
-    color: var(--primary-text-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
+  margin-bottom: 10px;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
 }
 .profession {
-    font-size: 16px;
-    line-height: 1.18;   
+  font-size: 16px;
+  line-height: 1.18;
 }
-.comand{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-left: -30px;
-    margin-top: -30px;
-    @include mq(tab){
+.comand {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+  @include mq(tab) {
     flex-direction: row;
-}
+  }
 }
 
-.comand-bloc{
-    margin-top: 30px;
-    margin-left: 30px;
-    
-    @include mq(tab){
-        width: calc(100% / 2 - 30px);
-    }
-    @include mq(desk){
-        width: calc(100% / 4 - 30px);
-    }
-    
+.comand-bloc {
+  margin-top: 30px;
+  margin-left: 30px;
+
+  @include mq(tab) {
+    width: calc(100% / 2 - 30px);
+  }
+  @include mq(desk) {
+    width: calc(100% / 4 - 30px);
+  }
+}
+
+.section-team {
+  background-color: #f5f4fa;
 }
